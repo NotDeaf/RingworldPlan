@@ -44,4 +44,13 @@ public class Converter
     {
         return feetCubed * FEETCUBED_TO_MILECUBED;
     }
+    
+    /**
+    * Converts a measurement in feet to astronomical units
+    * @param feet measurement in feet
+    */
+    public static double ftToAU(double feet)
+    {
+        return feet * FEET_TO_ASTRONOMICAL_UNITS;
+    }  
 }
