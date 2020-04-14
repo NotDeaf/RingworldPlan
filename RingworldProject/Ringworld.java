@@ -14,8 +14,6 @@ public class Ringworld
 {
     private Planet[] planets;
     
-    private Planet[] planets;
-    
     public Ringworld(Planet[] planets)
     {
         this.planets = new Planet[8];
