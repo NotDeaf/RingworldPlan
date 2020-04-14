@@ -14,8 +14,11 @@ public class Ringworld
 {
     private Planet[] planets;
     
+    private Planet[] planets;
+    
     public Ringworld(Planet[] planets)
     {
+        this.planets = new Planet[8];
         for(int i = 0; i < this.planets.length; i++)
         {
             this.planets[i] = planets[i]; 
