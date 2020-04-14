@@ -12,7 +12,7 @@
  */
 public class Ringworld
 {
-    private Planet[8] planets;
+    private Planet[] planets;
     
     public Ringworld(Planet[] planets)
     {
