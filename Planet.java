@@ -61,7 +61,8 @@ public class Planet
      */
     public double getVolume()
     {
-        return ft3ToMi3(volume);
+        Converter current = new Converter(volume);
+        return current.ft3ToMi3();
     }
     
     
@@ -71,6 +72,7 @@ public class Planet
      */
     public double getSurfaceArea()
     {
-        return ft2ToMiles2(surfaceArea);
+        Converter current = new Converter(surfaceArea);
+        return current.ft2ToMiles2();
     }
 }
