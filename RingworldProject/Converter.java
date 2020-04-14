@@ -15,6 +15,8 @@ public class Converter
         FEETSQRD_TO_MILESQRD = 3.58701 * Math.pow(10, -8);
     private final static double 
         FEETCUBED_TO_MILECUBED = 6.79357 * Math.pow(10, -8);
+    private final static double
+        FEET_TO_ASTRONOMICAL_UNITS = 9.2956 * Math.pow(10,7); 
     
     /**
      * Constructor for Converter objects
