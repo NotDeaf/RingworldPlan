@@ -81,9 +81,10 @@ public class Planet
     public double [] getPlanets()
     {
         double [] planets = {
-            JUPITER_VOLUME_FT3
-    SATURN_VOLUME_FT3 URANUS_VOLUME_FT3 NEPTUNE_VOLUME_FT3 EARTH_VOLUME_FT3 VENUS_VOLUME_FT3 = 9.2843 * Math.pow(10,11);
-    private final double MARS_VOLUME_FT3 = 1.6318 * Math.pow(10,11);
-    private final double MERCURY_VOLUME_FT3 = 6.083 * Math.pow(10,10);
-    }
+            JUPITER_VOLUME_FT3, SATURN_VOLUME_FT3,
+            URANUS_VOLUME_FT3, NEPTUNE_VOLUME_FT3,
+            EARTH_VOLUME_FT3, VENUS_VOLUME_FT3,
+            MARS_VOLUME_FT3, MERCURY_VOLUME_FT3,
+        }
+        return planets;
 }
