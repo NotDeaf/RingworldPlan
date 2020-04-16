@@ -14,14 +14,14 @@ public class RingworldTester
     public static void main(String[] args)
     {
         Planet myPlanet = new Planet();
-        double [] test = myPlanet.getPlanets().clone();
+        double [] myPlanets = myPlanet.getPlanets().clone();
         
         String [] planetNames = {"Mercury", "Venus", "Earth",
              "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"};
         
-        Ringworld myRW = new Ringworld(test);
+        Ringworld myRW = new Ringworld(myPlanets);
         
-        for(int i = 0; i < test.length; i++)
+        for(int i = 0; i < myPlanets.length; i++)
         {
             int count = i + 1;
             System.out.println("Planet #" + count +" is: " + planetNames[i]);
