@@ -19,9 +19,22 @@ public class Converter
         3.58701 * Math.pow(10, -8);
     private final static double FEETCUBED_TO_MILECUBED = 
         6.79357 * Math.pow(10, -8);
-    private final static double FEET_TO_ASTRONOMICAL_UNITS = 
-        9.2956 * Math.pow(10,7);
+    private final static double MILES_TO_ASTRONOMICAL_UNITS = 
+        1.0758 * Math.pow(10,-8);
+    private final static double METERS_TO_MILES = 
+        6.21371 * Math.pow(10, -4);
+    private final static double SQUARE_MILES_TO_EARTH_UNITS = 
+        1 / 1.699 * Math.pow(10, 8);
     
+    /**
+     * Converts a measurement in meters to miles
+     * @param - measurement in miles
+     */
+    public static double MetersToMi(double meterAmount)
+    {
+        return meterAmount * METERS_TO_MILES;
+    }
+        
     /**
      * Converts a measurement in feet squared to sqaure miles
      * @param feetSquared measurement in feet squared
@@ -41,11 +54,20 @@ public class Converter
     }
     
     /**
-    * Converts a measurement in feet to astronomical units
-    * @param feet measurement in feet
+    * Converts a measurement in miles to astronomical units
+    * @param miles measurement in miles
     */
-    public static double ftToAU(double feet)
+    public static double MiToAU(double miles)
     {
-        return feet * FEET_TO_ASTRONOMICAL_UNITS;
-    }  
+        return miles * MILES_TO_ASTRONOMICAL_UNITS;
+    }
+    
+    /**
+    * Converts a measurement in sqaure miles to earth units
+    * @param miles2 measurement in square miles
+    */
+    public static double Mi2ToEarthUnits(double miles2)
+    {
+        return miles2 * SQUARE_MILES_TO_EARTH_UNITS;
+    }
 }

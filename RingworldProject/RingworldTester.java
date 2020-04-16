@@ -11,27 +11,26 @@
  */
 public class RingworldTester
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class RingworldTester
-     */
-    public RingworldTester()
+    public static void main(String[] args)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        Planet myPlanet = new Planet();
+        
+        Ringworld myWorld = new Ringworld(myPlanet.getPlanets());
+        
+        System.out.println("First Planet: Mercury");
+        System.out.println("Volume in cubic miles: " + 
+            Converter.ft3ToMi3(myWorld.getPlanetVolume(0)));
+        System.out.println("Volume of Ringworld after addition: " +
+            myWorld.addVolume(Converter.ft3ToMi3(
+            myWorld.getPlanetVolume(0))));
+        System.out.println();
+        
+        System.out.println("First Planet: Venus");
+        System.out.println("First Planet: Earth");
+        System.out.println("First Planet: Mars");
+        System.out.println("First Planet: Jupiter");
+        System.out.println("First Planet: Saturn");
+        System.out.println("First Planet: Uranus");
+        System.out.println("First Planet: Neptune");
     }
 }

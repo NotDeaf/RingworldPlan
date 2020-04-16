@@ -19,16 +19,17 @@ public class Ringworld
 {
     private double [] planets;
     private double totalVolumeMi3;
+    private double RWLengthMi;
     private final double EARTH_SURFACE_AREA_MI2 = 196.94 * Math.pow(10, 6);
     private final double RW_INNER_SURFACE_WIDTH_MI = 9.0 * Math.pow(10, 5);
     private final double RW_INNER_SURFACE_HEIGHT_M = 1.0 * Math.pow(10, 2);
     private final double RW_OUTER_SURFACE_WIDTH_M = 1.0 * Math.pow(10, 2);
     private final double RW_OUTER_SURFACE_HEIGHT_MI = 1.0 * Math.pow(10, 3);
-    private double RWOuterSurfaceLengthMi;
-    private double RWInnerSurfaceLengthMi;
     
     /**
-     * 
+     * Constructor for Ringworld objects, sets volume and the
+     *     length of the ringworld to zero
+     * @param planets 1D array of volumes of all eight planets
      */
     public Ringworld(double[] planets)
     {
@@ -37,28 +38,53 @@ public class Ringworld
         {
             this.planets[i] = planets[i]; 
         }
-        totalVolumeMi3 = 0;
+        this.totalVolumeMi3 = 0;
+        this.RWLengthMi = 0;
     }
+    
     /**
-     *
+     * Returns the volume of a planet in the array of doubles
+     * @return - the volume of a given planet in cubic feet
+     */
+    public double getPlanetVolume(int index)
+    {
+        return planets[index];
+    }
+    
+    /**
+     * Adds a specified volume, in cubic miles, to the Ringworld
+     * @param amountMi3 amount of volume to add in cubic miles
      */
     public void addVolume(double amountMi3)
     {
         this.totalVolumeMi3 += amountMi3;
+        this.RWLengthMi = this.totalVolumeMi3 / 
+            (2 * (Converter.MetersToMi(RW_OUTER_SURFACE_WIDTH_M) * 
+            RW_OUTER_SURFACE_HEIGHT_MI) + (RW_INNER_SURFACE_WIDTH_MI *
+            Converter.MetersToMi(RW_INNER_SURFACE_HEIGHT_M)));
     }
+    
     /**
-     * 
+     * Returns the radius of the Ringworld in astronomical units
+     * @return - radius of the Ringworld in astronomical units
      */
     public double getRadius()
     {
-        
-        return 0;
+        double radiusMi = RWLengthMi / (2 * Math.PI);
+        double radiusAU = Converter.MiToAU(radiusMi);
+        return radiusAU;
     }
+    
     /**
-     * 
+     * Returns the surface area of the Ringworld in earth units
+     * @return - the surface area of the Ringworld in earth units
      */
     public double getArea()
     {
-        return 0;
+        double surfaceAreaMi2 = RW_INNER_SURFACE_WIDTH_MI *
+            RWLengthMi;
+        double surfaceAreaEarthUnits = Converter.Mi2ToEarthUnits(
+            surfaceAreaMi2);
+        return surfaceAreaEarthUnits;
     }
 }
