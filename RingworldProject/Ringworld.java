@@ -33,7 +33,7 @@ public class Ringworld
      */
     public Ringworld(double[] planets)
     {
-        this.planets = new double[8];
+        this.planets = new double[8]; //This needs to be planets.length not 8 (broke tester)
         for(int i = 0; i < this.planets.length; i++)
         {
             this.planets[i] = planets[i]; 
