@@ -85,6 +85,7 @@ public class Planet
             URANUS_VOLUME_FT3, NEPTUNE_VOLUME_FT3,
             EARTH_VOLUME_FT3, VENUS_VOLUME_FT3,
             MARS_VOLUME_FT3, MERCURY_VOLUME_FT3,
-        }
+        };
         return planets;
+    }
 }
