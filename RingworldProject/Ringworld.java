@@ -48,7 +48,7 @@ public class Ringworld
      */
     public double getPlanetVolume(int index)
     {
-        return planets[index];
+        return planets[index]; // This should be returned in cubic miles
     }
     
     /**
