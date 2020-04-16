@@ -51,7 +51,7 @@ public class Ringworld
     
     /**
      * Returns the volume of a planet in the array of doubles
-     * @return - the volume of a given planet in cubic feet
+     * @return - the volume of a given planet in cubic miles
      */
     public double getPlanetVolume(int index)
     {
