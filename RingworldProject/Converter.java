@@ -2,6 +2,11 @@
  * Converter is an auxiliary class to Planet and Ringworld which is
  *     converts between units to control the units of the calculations
  *     within the Planet and Ringworld classes
+ *     
+ * Group Members:
+ *     Luke Pastore
+ *     Ansh Motiani
+ *     Gar Rudnyai
  *
  * @author Luke Pastore
  * @author Ansh Motiani
@@ -10,22 +15,12 @@
  */
 public class Converter
 {
-    private double currentValue;
-    private final static double 
-        FEETSQRD_TO_MILESQRD = 3.58701 * Math.pow(10, -8);
-    private final static double 
-        FEETCUBED_TO_MILECUBED = 6.79357 * Math.pow(10, -8);
-    private final static double
-        FEET_TO_ASTRONOMICAL_UNITS = 9.2956 * Math.pow(10,7); 
-    
-    /**
-     * Constructor for Converter objects
-     * @param current current value
-     */
-    public Converter(double current)
-    {
-        this.currentValue = current;
-    }
+    private final static double FEETSQRD_TO_MILESQRD = 
+        3.58701 * Math.pow(10, -8);
+    private final static double FEETCUBED_TO_MILECUBED = 
+        6.79357 * Math.pow(10, -8);
+    private final static double FEET_TO_ASTRONOMICAL_UNITS = 
+        9.2956 * Math.pow(10,7);
     
     /**
      * Converts a measurement in feet squared to sqaure miles

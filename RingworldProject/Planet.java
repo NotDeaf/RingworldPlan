@@ -1,6 +1,11 @@
 /**
  * Planet is an auxiliary class to Ringworld that allows for
  * Planets to be stored in objects.
+ * 
+ * Group Members:
+ *     Luke Pastore
+ *     Ansh Motiani
+ *     Gar Rudnyai
  *
  * @author Luke Pastore
  * @author Ansh Motiani
@@ -14,7 +19,7 @@ public class Planet
     private double volumeFt3;
     private double surfaceAreaFt2;
     
-    // Our Universe's Planet's Volume in Cubic Feet
+    // Our Universe's Planets' Volume in Cubic Feet pluto?
     private final double JUPITER_VOLUME_FT3 = 1.43128 * Math.pow(10,15);
     private final double SATURN_VOLUME_FT3 = 8.2713 * Math.pow(10,14);
     private final double URANUS_VOLUME_FT3 = 6.833 * Math.pow(10,13);
@@ -23,6 +28,7 @@ public class Planet
     private final double VENUS_VOLUME_FT3 = 9.2843 * Math.pow(10,11);
     private final double MARS_VOLUME_FT3 = 1.6318 * Math.pow(10,11);
     private final double MERCURY_VOLUME_FT3 = 6.083 * Math.pow(10,10);
+    private final double EARTH_SURFACE_AREA_MI2 = 196.94 * Math.pow(10, 6);
     
     /**
      * No Parameter Planet constructor
@@ -48,16 +54,16 @@ public class Planet
     /**
      * Adds a given amount of volume, assuming that the planet is
      *     always perfectly spherical
-     * @param double quantity in feet cubed
+     * @param double quantity in cubic feet
      */
-    public void addVolume(double quantity)
+    public void addVolume(double quantityFt3)
     {
-        volumeFt3 += quantity;
+        volumeFt3 += quantityFt3;
     }
     
     /**
      * returns volumes in miles cubed
-     * @return volume in miles cubed
+     * @return - volume in miles cubed
      */
     public double getVolume()
     {
@@ -67,7 +73,7 @@ public class Planet
     
     /**
      * returns surface area in square miles
-     * @return surfaceArea in miles squared
+     * @return surfaceArea in square miles
      */
     public double getSurfaceArea()
     {
