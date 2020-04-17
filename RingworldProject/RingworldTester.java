@@ -7,7 +7,7 @@
  *     Gar Rudnyai
  *
  * @author Luke Pastore
- * @version April 16, 2020
+ * @version April 17, 2020
  */
 public class RingworldTester
 {
