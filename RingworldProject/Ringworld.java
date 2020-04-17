@@ -21,7 +21,7 @@
  */
 public class Ringworld
 {
-    private double [] planets = new double[8];
+    private double [] planets;
     private double totalVolumeMi3;
     private double RWLengthMi;
     private final double EARTH_SURFACE_AREA_MI2 = 196.94 * Math.pow(10, 6);
