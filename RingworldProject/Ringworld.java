@@ -32,7 +32,7 @@ public class Ringworld
     
     /**
      * Constructor for Ringworld objects, sets volume and the
-     *     length of the ringworld to zero
+     * length of the ringworld to zero
      * @param planets 1D array of volumes of all eight planets
      */
     public Ringworld(double[] planets)
