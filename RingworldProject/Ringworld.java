@@ -46,13 +46,6 @@ public class Ringworld
         this.RWLengthMi = 0;
     }
     
-    public Ringworld()
-    {
-        this.planets = new double[8];
-        this.totalVolumeMi3 = 0;
-        this.RWLengthMi = 0;
-    }
-    
     /**
      * Returns the volume of a planet in the array of doubles
      * @return - the volume of a given planet in cubic miles
