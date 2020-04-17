@@ -21,12 +21,16 @@ public class RingworldTester
         
         Ringworld myRW = new Ringworld(myPlanets);
         
+        // When going through a loop we wanted to make sure the english was
+        // correct. This required us to address the special case of 
+        // "1 planet" instead of "1 planets."
         System.out.println("Planet #1 is: " + planetNames[0]);
         myRW.addVolume(myRW.getPlanetVolume(0));
         System.out.println("Current Ringworld radius after 1 planet is: " + 
             myRW.getRadius() + " AU");
         System.out.println("Current Ringworld area after 1 planet is: " + 
             myRW.getArea() + " Earth Units\n");
+        
         for(int i = 1; i < myPlanets.length; i++)
         {
             int count = i + 1;
