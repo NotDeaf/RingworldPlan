@@ -26,26 +26,8 @@ public class RingworldTester
             int count = i + 1;
             System.out.println("Planet #" + count +" is: " + planetNames[i]);
             myRW.addVolume(myRW.getPlanetVolume(i));
-            System.out.println("Current radius after " + count + " planets is: " + myRW.getRadius() + "AU");
-            System.out.println("Current area after " + count + " planets is: " + myRW.getArea() + "Earth Units\n");
+            System.out.println("Current radius after " + count + " planets is: " + myRW.getRadius() + " AU");
+            System.out.println("Current area after " + count + " planets is: " + myRW.getArea() + " Earth Units\n");
         }
-        
-        
-        
-        //Gar's Solution
-        
-        // System.out.println("First Planet: Mercury");
-        // System.out.println("Volume in cubic miles: " + Converter.ft3ToMi3(myWorld.getPlanetVolume(0)));
-        // myWorld.addVolume(Converter.ft3ToMi3(myWorld.getPlanetVolume(0)));
-        // System.out.println("Volume of Ringworld after addition: " + myWorld.getVolume);
-        // System.out.println();
-        
-        // System.out.println("First Planet: Venus");
-        // System.out.println("First Planet: Earth");
-        // System.out.println("First Planet: Mars");
-        // System.out.println("First Planet: Jupiter");
-        // System.out.println("First Planet: Saturn");
-        // System.out.println("First Planet: Uranus");
-        // System.out.println("First Planet: Neptune");
     }
 }
