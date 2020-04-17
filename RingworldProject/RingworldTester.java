@@ -2,9 +2,9 @@
  * RingworldTester is a tester class for Ringworld.
  * 
  * Group Members:
- *     Luke Pastore
- *     Ansh Motiani
- *     Gar Rudnyai
+ * Luke Pastore
+ * Ansh Motiani
+ * Gar Rudnyai
  *
  * @author Luke Pastore
  * @version April 17, 2020
