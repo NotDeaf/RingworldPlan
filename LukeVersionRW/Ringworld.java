@@ -4,6 +4,12 @@
  *     that is comprised of all of the planets in the universe.
  *     Ringworld uses two auxiliary classes, Planet and Converter,
  *     to make conversion tasks and planet data easy to access.
+ * 
+ * It's a very bad idea to store the dimensions of the Ringworld
+ *     in constants because they cannot be converted into other
+ *     units. So, we will have to make copies of each of the
+ *     constant instance fields in order for our units to all
+ *     agree and be constant.
  *
  * Group Members:
  *     Luke Pastore
@@ -65,10 +71,12 @@ public class Ringworld
     public void addVolume(double amountMi3)
     {
         this.totalVolumeMi3 += amountMi3;
+        double outerSurfaceWidthCopyM = this.RW_OUTER_SURFACE_WIDTH_M;
+        double innerSurfaceHeightCopyM = this.RW_INNER_SURFACE_HEIGHT_M;
         this.RWLengthMi = this.totalVolumeMi3 / 
-            (2 * (Converter.MetersToMi(RW_OUTER_SURFACE_WIDTH_M) * 
+            (2 * (Converter.MetersToMi(outerSurfaceWidthCopyM) * 
             RW_OUTER_SURFACE_HEIGHT_MI) + (RW_INNER_SURFACE_WIDTH_MI *
-            Converter.MetersToMi(RW_INNER_SURFACE_HEIGHT_M)));
+            Converter.MetersToMi(innerSurfaceHeightCopyM)));
     }
     
     /**
