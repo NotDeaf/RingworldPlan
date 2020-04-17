@@ -1,12 +1,12 @@
 /**
  * Converter is an auxiliary class to Planet and Ringworld which is
- *     converts between units to control the units of the calculations
- *     within the Planet and Ringworld classes
+ * converts between units to control the units of the calculations
+ * within the Planet and Ringworld classes
  *     
  * Group Members:
- *     Luke Pastore
- *     Ansh Motiani
- *     Gar Rudnyai
+ * Luke Pastore
+ * Ansh Motiani
+ * Gar Rudnyai
  *
  * @author Ansh Motiani
  * @version April 17, 2020
