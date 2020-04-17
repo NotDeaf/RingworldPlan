@@ -26,7 +26,7 @@ public class Converter
     
     /**
      * Converts a measurement in meters to miles
-     * @param - measurement in miles
+     * @param measurement in miles
      */
     public static double MetersToMi(double meterAmount)
     {
