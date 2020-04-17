@@ -40,7 +40,9 @@ public class Planet
     }
     
     /**
-     * Planet constructor given the radius of the planet
+     * Planet constructor that sets the radius to a given value and
+     * sets the volume (ft cubed) and surface area (square feet)
+     *
      * @param radius the radius of the planet, in feet
      */
     public Planet(double radiusFt)
@@ -52,7 +54,8 @@ public class Planet
     
     /**
      * Adds a given amount of volume, assuming that the planet is
-     *     always perfectly spherical
+     * always perfectly spherical
+     *
      * @param double quantity in cubic feet
      */
     public void addVolume(double quantityFt3)
@@ -63,6 +66,7 @@ public class Planet
     
     /**
      * returns volumes in miles cubed
+     *
      * @return - volume in miles cubed
      */
     public double getVolume()
@@ -73,6 +77,7 @@ public class Planet
     
     /**
      * returns surface area in square miles
+     *
      * @return surfaceArea in square miles
      */
     public double getSurfaceArea()
@@ -82,6 +87,7 @@ public class Planet
     
     /**
     * returns array of all planet's volumes
+    *
     * @return returns array of all planet's volumes in cubic feet
     */
     public double [] getPlanets()
