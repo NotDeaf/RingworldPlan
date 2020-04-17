@@ -7,8 +7,6 @@
  *     Ansh Motiani
  *     Gar Rudnyai
  *
- * @author Luke Pastore
- * @author Ansh Motiani
  * @author Gar Rudnyai
  * @version April 14, 2020
  */
