@@ -8,7 +8,7 @@
  *     Ansh Motiani
  *     Gar Rudnyai
  *
- * @author Gar Rudnyai
+ * @author Ansh Motiani
  * @version April 14, 2020
  */
 public class Converter
