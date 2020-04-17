@@ -29,7 +29,8 @@ public class Planet
     private final double EARTH_SURFACE_AREA_MI2 = 196.94 * Math.pow(10, 6);
     
     /**
-     * No Parameter Planet constructor
+     * Planet constructor that sets the radius, volume and surface area to 
+     * zero
      */
     public Planet()
     {
