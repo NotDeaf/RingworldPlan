@@ -14,12 +14,12 @@ public class RingworldTester
     public static void main(String[] args)
     {
         Planet myPlanet = new Planet();
-        double [] myPlanets = myPlanet.getPlanets().clone();
+        
         
         String [] planetNames = {"Mercury", "Venus", "Earth",
              "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"};
         
-        Ringworld myRW = new Ringworld(myPlanets);
+        Ringworld myRW = new Ringworld(myPlanet.getPlanets());
         
         // When going through a loop we wanted to make sure the english was
         // correct. This required us to address the special case of 
@@ -31,7 +31,7 @@ public class RingworldTester
         System.out.println("Current Ringworld area after 1 planet is: " + 
             myRW.getArea() + " Earth Units\n");
         
-        for(int i = 1; i < myPlanets.length; i++)
+        for(int i = 1; i < myPlanet.getPlanets().length; i++)
         {
             int count = i + 1;
             System.out.println("Planet #" + count +" is: " + 
