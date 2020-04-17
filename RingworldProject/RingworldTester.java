@@ -6,7 +6,7 @@
  *     Ansh Motiani
  *     Gar Rudnyai
  *
- * @author (your name)
+ * @author Luke Pastore
  * @version April 16, 2020
  */
 public class RingworldTester
