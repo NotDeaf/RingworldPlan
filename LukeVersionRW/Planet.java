@@ -59,6 +59,7 @@ public class Planet
     public void addVolume(double quantityFt3)
     {
         volumeFt3 += quantityFt3;
+        radiusFt = cbrt((3 / 4) * (volumeFt3 / Math.PI));
     }
     
     /**
