@@ -8,7 +8,7 @@
  *     Gar Rudnyai
  *
  * @author Gar Rudnyai
- * @version April 14, 2020
+ * @version April 17, 2020
  */
 public class Planet
 {
