@@ -3,9 +3,9 @@
  * Planets to be stored in objects.
  * 
  * Group Members:
- *     Luke Pastore
- *     Ansh Motiani
- *     Gar Rudnyai
+ * Luke Pastore
+ * Ansh Motiani
+ * Gar Rudnyai
  *
  * @author Gar Rudnyai
  * @version April 17, 2020
