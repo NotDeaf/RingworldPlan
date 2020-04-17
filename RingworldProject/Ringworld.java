@@ -4,6 +4,12 @@
  *     that is comprised of all of the planets in the universe.
  *     Ringworld uses two auxiliary classes, Planet and Converter,
  *     to make conversion tasks and planet data easy to access.
+ * 
+ * It's a very bad idea to store the dimensions of the Ringworld
+ *     in constants because they cannot be converted into other
+ *     units. So, we will have to make copies of each of the
+ *     constant instance fields in methods that use them in order 
+ *     to manipulate our units to all agree and be constant.
  *
  * Group Members:
  *     Luke Pastore
@@ -17,7 +23,7 @@
  */
 public class Ringworld
 {
-    private double [] planets;
+    private double [] planets = new double[8];
     private double totalVolumeMi3;
     private double RWLengthMi;
     private final double EARTH_SURFACE_AREA_MI2 = 196.94 * Math.pow(10, 6);
@@ -33,7 +39,7 @@ public class Ringworld
      */
     public Ringworld(double[] planets)
     {
-        this.planets = new double[8]; //This needs to be planets.length not 8 (broke tester)
+        this.planets = new double[planets.length];
         for(int i = 0; i < this.planets.length; i++)
         {
             this.planets[i] = planets[i]; 
@@ -42,13 +48,20 @@ public class Ringworld
         this.RWLengthMi = 0;
     }
     
+    public Ringworld()
+    {
+        this.planets = new double[8];
+        this.totalVolumeMi3 = 0;
+        this.RWLengthMi = 0;
+    }
+    
     /**
      * Returns the volume of a planet in the array of doubles
-     * @return - the volume of a given planet in cubic feet
+     * @return - the volume of a given planet in cubic miles
      */
     public double getPlanetVolume(int index)
     {
-        return planets[index]; // This should be returned in cubic miles
+        return Converter.ft3ToMi3(planets[index]);
     }
     
     /**
@@ -58,10 +71,12 @@ public class Ringworld
     public void addVolume(double amountMi3)
     {
         this.totalVolumeMi3 += amountMi3;
+        double outerSurfaceWidthCopyM = this.RW_OUTER_SURFACE_WIDTH_M;
+        double innerSurfaceHeightCopyM = this.RW_INNER_SURFACE_HEIGHT_M;
         this.RWLengthMi = this.totalVolumeMi3 / 
-            (2 * (Converter.MetersToMi(RW_OUTER_SURFACE_WIDTH_M) * 
+            (2 * (Converter.MetersToMi(outerSurfaceWidthCopyM) * 
             RW_OUTER_SURFACE_HEIGHT_MI) + (RW_INNER_SURFACE_WIDTH_MI *
-            Converter.MetersToMi(RW_INNER_SURFACE_HEIGHT_M)));
+            Converter.MetersToMi(innerSurfaceHeightCopyM)));
     }
     
     /**

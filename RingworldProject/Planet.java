@@ -19,7 +19,7 @@ public class Planet
     private double volumeFt3;
     private double surfaceAreaFt2;
     
-    // Our Universe's Planets' Volume in Cubic Feet pluto?
+    // Our Universe's Planets' Volume in Cubic Feet
     private final double JUPITER_VOLUME_FT3 = 1.43128 * Math.pow(10,15);
     private final double SATURN_VOLUME_FT3 = 8.2713 * Math.pow(10,14);
     private final double URANUS_VOLUME_FT3 = 6.833 * Math.pow(10,13);
@@ -59,6 +59,7 @@ public class Planet
     public void addVolume(double quantityFt3)
     {
         volumeFt3 += quantityFt3;
+        radiusFt = Math.cbrt((3 / 4) * (volumeFt3 / Math.PI));
     }
     
     /**
@@ -90,8 +91,7 @@ public class Planet
             JUPITER_VOLUME_FT3, SATURN_VOLUME_FT3,
             URANUS_VOLUME_FT3, NEPTUNE_VOLUME_FT3,
             EARTH_VOLUME_FT3, VENUS_VOLUME_FT3,
-            MARS_VOLUME_FT3, MERCURY_VOLUME_FT3,
-        };
+            MARS_VOLUME_FT3, MERCURY_VOLUME_FT3};
         return planets;
     }
 }
