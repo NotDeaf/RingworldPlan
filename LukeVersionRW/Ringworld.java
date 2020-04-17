@@ -8,8 +8,8 @@
  * It's a very bad idea to store the dimensions of the Ringworld
  *     in constants because they cannot be converted into other
  *     units. So, we will have to make copies of each of the
- *     constant instance fields in order for our units to all
- *     agree and be constant.
+ *     constant instance fields in methods that use them in order 
+ *     to manipulate our units to all agree and be constant.
  *
  * Group Members:
  *     Luke Pastore
