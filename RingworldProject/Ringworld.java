@@ -1,20 +1,20 @@
 /**
  * Ringworld is a class that constructs data that simulates
- *     a Ringworld, which is a ring that orbits around a star
- *     that is comprised of all of the planets in the universe.
- *     Ringworld uses two auxiliary classes, Planet and Converter,
- *     to make conversion tasks and planet data easy to access.
+ * a Ringworld, which is a ring that orbits around a star
+ * that is comprised of all of the planets in the universe.
+ * Ringworld uses two auxiliary classes, Planet and Converter,
+ * to make conversion tasks and planet data easy to access.
  * 
  * It's a very bad idea to store the dimensions of the Ringworld
- *     in constants because they cannot be converted into other
- *     units. So, we will have to make copies of each of the
- *     constant instance fields in methods that use them in order 
- *     to manipulate our units to all agree and be constant.
+ * in constants because they cannot be converted into other
+ * units. So, we will have to make copies of each of the
+ * constant instance fields in methods that use them in order 
+ * to manipulate our units to all agree and be constant.
  *
  * Group Members:
- *     Luke Pastore
- *     Ansh Motiani
- *     Gar Rudnyai
+ * Luke Pastore
+ * Ansh Motiani
+ * Gar Rudnyai
  *     
  * @author Gar Rudnyai
  * @version April 17, 2020
