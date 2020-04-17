@@ -48,7 +48,7 @@ public class Ringworld
     
     /**
      * Returns the volume of a planet in the array of doubles
-     * @return - the volume of a given planet in cubic miles
+     * @return the volume of a given planet in cubic miles
      */
     public double getPlanetVolume(int index)
     {
@@ -72,7 +72,7 @@ public class Ringworld
     
     /**
      * Returns the radius of the Ringworld in astronomical units
-     * @return - radius of the Ringworld in astronomical units
+     * @return radius of the Ringworld in astronomical units
      */
     public double getRadius()
     {
@@ -83,7 +83,7 @@ public class Ringworld
     
     /**
      * Returns the surface area of the Ringworld in earth units
-     * @return - the surface area of the Ringworld in earth units
+     * @return the surface area of the Ringworld in earth units
      */
     public double getArea()
     {
